@@ -99,16 +99,16 @@ document.addEventListener('DOMContentLoaded',() => {
         glb('./components/glb/led.glb',7);
         glb('./components/glb/uno.glb',8);
         glb('./components/glb/compass.glb',9);*/
-        glb('./rc522.glb',0);
-        glb('./potentiometer.glb',1);
-        glb('./stepper.glb',2);
-        glb('./pushbutton.glb',3);
-        glb('./buzzer.glb',4);
-        glb('./servomotor.glb',5);
-        glb('./dhtsensor.glb',6);
-        glb('./led.glb',7);
-        glb('./uno.glb',8);
-        glb('./compass.glb',9);
+        glb('rc522.glb',0);
+        glb('potentiometer.glb',1);
+        glb('stepper.glb',2);
+        glb('pushbutton.glb',3);
+        glb('buzzer.glb',4);
+        glb('servomotor.glb',5);
+        glb('dhtsensor.glb',6);
+        glb('led.glb',7);
+        glb('uno.glb',8);
+        glb('compass.glb',9);
         const animate_tick = () => {
             window.requestAnimationFrame(animate_tick);
             for(var meshModel of models){
