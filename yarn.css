@@ -1,0 +1,42 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+
+body{
+    background: radial-gradient(aqua,rgb(152, 152, 255),darkblue);}
+
+
+/*html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior:smooth;
+}*/
+.process-step{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    --width: 100%;
+    color:white;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    /* scroll-snap-align: start;background: radial-gradient(bisque,rgb(212, 182, 144),rgb(207, 168, 119)); */
+}
+
+.process-step a{
+    text-decoration: none;
+}
+.process-step:nth-child(odd)
+{
+    justify-content: flex-end;
+}
+.webglRenderer{
+    position:fixed;
+    top:0px;
+    --z-index: -1;
+}
+
+a:hover{
+    color:aqua;
+}

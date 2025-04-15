@@ -1,77 +1,30 @@
+<!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="./css/style.css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>XR Mechatronics Components</title>
-</head>
-<body>
-<header></header>
-<nav>
-<div id="component-class">
-<div id="component-class-head">Components</div>
-<ul>
-    <li><a href="#sensor">
-            <div style="background: url(./img/sensor.png) no-repeat center top; background-size: contain; margin:4px;height: 40px;">
-                <br><br><br><br>Sensor</div></a></li>
-    <li><a href="#led">
-            <div style="background: url(./img/led.png) no-repeat center top; background-size: contain; margin:4px;height: 40px;">
-                <br><br><br><br>Led</div></a></li>
-    <li><a href="#controller">
-            <div style="background: url(./img/controller.png) no-repeat center top; background-size: contain; margin:4px;height: 40px;">
-                <br><br><br><br>Controller</div></a></li>
-    <li><a href="#actuator">
-            <div style="background: url(./img/actuator.png) no-repeat center top; background-size: contain; margin:4px;height: 40px;">
-                <br><br><br><br>Actuator</div></a></li>
-    <li><a href="#iot">
-            <div style="background: url(./img/iot.png) no-repeat center top; background-size: contain; margin:4px;height: 40px;">
-                <br><br><br><br>IOT</div></a></li>
-</ul>
-</div>
-<div><input>search</input></div>
-<ul id="component">
-<!--li><a href="#ArduinoUNO" onclick="myFun(event);"><img src="./components/img/arduinouno.png"><div>UNO</div></a></li>723684,5A3154,5A3155,41223D
-<li><a href="#Battery" onclick="myFun(event);"><img src="./components/img/battery.png"><div>Battery</div></a></li>
-<li><a href="#Buzzer" onclick="myFun(event);"><img src="./components/img/buzzer.png"><div>Buzzer</div></a></li>
-<li><a href="#DHTsensor" onclick="myFun(event);"><img src="./components/img/dhtsensor.png"><div>DHTsensor</div></a></li>
-<li><a href="#Led" onclick="myFun(event);"><img src="./components/img/led.png"><div>Led</div></a></li>
-<li><a href="#Micro_servo_motor" onclick="myFun(event);"><img src="./components/img/microservomotor.png"><div>Servo</div></a></li>
-<li><a href="#Potentiometer" onclick="myFun(event);"><img src="./components/img/potentiometer.png"><div>Potentiometer</div></a></li>
-<li><a href="#PushButton" onclick="myFun(event);"><img src="./components/img/pushbutton.png"><div>PushButton</div></a></li>
-<li><a href="#RC522" onclick="myFun(event);"><img src="./components/img/rc522.png"><div>RC522</div></a></li>
-<li><a href="#Stepper" onclick="myFun(event);"><img src="./components/img/stepper.png"><div>Stepper</div></a></li>
-<li><a href="#MalePin" onclick="myFun(event);"><img src="./components/img/arduinouno.png"><div>MalePin</div></a></li!-->
-</ul>
-</nav>
-<div id="podium"></div>
-<div id="component-details"><div id="component-details-head">Component details</div>
-<table id="component-details-body">
-    <tbody>
-        <tr>
-            <td rowspan=7><a id="component-details-img"><img src="./components/img/uno.png"></a></td>
-            <td colspan=2><a id="componentName"></a></td>
-        </tr>
-        <tr><td><a>Class</a></td><td><a id="componentClass"></a></td></tr>
-        <tr><td><a id="key1"></a></td><td><a id="value1"></a></td></tr>
-        <tr><td><a id="key2"></a></td><td><a id="value2"></a></td></tr>
-        <tr><td><a id="key3"></a></td><td><a id="value3"></a></td></tr>
-        <tr><td colspan=3><a>Description</a></td></tr>
-        <tr><td colspan=3><a id="description"></a></td></tr>
-        <tr><td colspan=3><a id="T1"></a></td></tr>
-        <tr><td><a id="keyT1R1"></a></td><td colspan=2><a id="valueT1R1"></a></td></tr>
-        <tr><td><a id="keyT1R2"></a></td><td colspan=2><a id="valueT1R2"></a></td></tr>
-        <tr><td><a id="keyT1R3"></a></td><td colspan=2><a id="valueT1R3"></a></td></tr>
-        <tr><td colspan=3><a id="T2"></a></td></tr>
-        <tr><td><a id="keyT2R1"></a></td><td colspan=2><a id="valueT2R1"></a></td></tr>
-        <tr><td><a id="keyT2R2"></a></td><td colspan=2><a id="valueT2R2"></a></td></tr>
-        <tr><td><a id="keyT2R3"></a></td><td colspan=2><a id="valueT2R3"></a></td></tr>
-        <tr><td><a id="keyT2R4"></a></td><td colspan=2><a id="valueT2R4"></a></td></tr>
-        <tr><td colspan=3><a id="T3"></a></td></tr>
-        <tr><td><a id="keyT3R1"></a></td><td colspan=2><a id="valueT3R1"></a></td></tr>
-        <tr><td><a id="keyT3R2"></a></td><td colspan=2><a id="valueT3R2"></a></td></tr>
-        <tr><td><a id="keyT3R3"></a></td><td colspan=2><a id="valueT3R3"></a></td></tr>
-    </tbody>
-</table>
-</div>
-<script src="./js/main.js" type="module"></script>
-</body>
+    <head>
+        <title>Yarn Process</title>
+        <link rel="stylesheet" href="./yarn.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <canvas class="webglRenderer"></canvas>
+        <div id="process">
+            <div class="process-step"><h1>Cotton Bales</h1></div>
+            <div class="process-step"><h1>Blowroom</h1></div>
+            <div class="process-step"><h1>Carding</h1></div>
+            <div class="process-step"><h1>Breaker Draw Frame</h1></div>
+            <div class="process-step"><h1>Lapformer</h1></div>
+            <div class="process-step"><h1>Comber</h1></div>
+            <div class="process-step"><h1>Finisher Draw Frame</h1></div>
+            <div class="process-step"><h1>Speed Frame</h1></div>
+            <div class="process-step"><h1>Ring Frame</h1></div>
+            <div class="process-step"><h1>Winding</h1></div>
+            <div class="process-step"><h1>Packing</h1></div>
+        </div>
+        <script src='./gsap.min.js'></script>
+        <script src='./yarn.js'></script>
+        <script src='./three.module.js'></script>
+        <script src='./three.min.js'></script>
+        <script src='./GLTFLoader.js'></script>
+        
+    </body>
 </html>
